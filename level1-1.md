@@ -2,34 +2,34 @@
 //나의 풀이
 
 class Solution {
-public long solution(int a, int b) {
-long answer = 0;
+    public long solution(int a, int b) {
+    long answer = 0;
 
-    if (a>b) {
-        for (; b <= a; b++) {
-            answer += b;
+        if (a>b) {
+            for (; b <= a; b++) {
+                answer += b;
+            }
         }
-    }
-    else if (a<b) {
-        for (; a <= b; a++) {
-            answer += a;
+        else if (a<b) {
+            for (; a <= b; a++) {
+                answer += a;
+            }
         }
-    }
-    else {return a;}
+        else {return a;}
 
-    return answer;
-}
+        return answer;
+    }
 }
 
 //좋은 정답
 
 class Solution {
 
-public long solution(int a, int b) {
-    return sumAtoB(Math.min(a, b), Math.max(b, a));
-}
+    public long solution(int a, int b) {
+        return sumAtoB(Math.min(a, b), Math.max(b, a));
+    }
 
-private long sumAtoB(long a, long b) {
-    return (b - a + 1) * (a + b) / 2;
-}
+    private long sumAtoB(long a, long b) {
+        return (b - a + 1) * (a + b) / 2;
+    }
 }
