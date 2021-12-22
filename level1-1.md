@@ -3,6 +3,7 @@
 
 class Solution {
     public long solution(int a, int b) {
+    
     long answer = 0;
 
         if (a>b) {
@@ -21,7 +22,7 @@ class Solution {
     }
 }
 
-//좋은 정답
+//등차수열을 사용한 풀이
 
 class Solution {
 
